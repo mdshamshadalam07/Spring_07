@@ -2,6 +2,7 @@ package com.nt.test;
 
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanFactory;
+import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.FileSystemResource;
 import org.springframework.core.io.Resource;
 
@@ -16,7 +17,13 @@ public class ConstructorInjectionTest {
 		WishMessageGenerator generator=null;
 		
 		// Hold spring bean cfg file name and location
-		res=new FileSystemResource("src/com/nt/cfgs/applicationContext.xml");
+		// res=new FileSystemResource("src/com/nt/cfgs/applicationContext.xml");
+		
+		//res=new FileSystemResource("C:\\Users\\Win10\\git\\Spring_07\\04-Spring-IOCProj3-ConstructorInjection\\src\\com\\nt\\cfgs\\applicationContext.xml\\");
+		
+		//res=new ClassPathResource("com/nt/cfgs/applicationContext.xml");
+		
+		res=new ClassPathResource("applicationContext.xml");
 		
 		//create IOC container
 		factory=new XmlBeanFactory(res);
