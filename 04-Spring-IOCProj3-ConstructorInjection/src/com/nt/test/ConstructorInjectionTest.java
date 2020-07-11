@@ -1,9 +1,10 @@
 package com.nt.test;
 
+import java.util.Date;
+
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanFactory;
 import org.springframework.core.io.ClassPathResource;
-import org.springframework.core.io.FileSystemResource;
 import org.springframework.core.io.Resource;
 
 import com.nt.beans.WishMessageGenerator;
@@ -15,6 +16,7 @@ public class ConstructorInjectionTest {
 		Resource res=null;
 		BeanFactory factory=null;
 		WishMessageGenerator generator=null;
+	//	Date d= null;
 		
 		// Hold spring bean cfg file name and location
 		// res=new FileSystemResource("src/com/nt/cfgs/applicationContext.xml");
@@ -28,8 +30,10 @@ public class ConstructorInjectionTest {
 		//create IOC container
 		factory=new XmlBeanFactory(res);
 		
-		//get target bean class object
-		generator=(WishMessageGenerator)factory.getBean("wmg");
+		// get target bean class object
+		// generator=(WishMessageGenerator)factory.getBean("wmg");
+		
+		generator=(WishMessageGenerator)factory.getBean("wmg",WishMessageGenerator.class);
 		
 		//invoke the b.method
 		System.out.println(generator.generateWishMessage("Md Shamshad Alam"));

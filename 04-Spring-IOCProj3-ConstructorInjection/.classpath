@@ -6,14 +6,7 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry excluding="com/nt/cfgs/" kind="src" path="src"/>
-	<classpathentry kind="lib" path="C:/Users/Win10/OneDrive/Desktop/Spring-framework-5.2.7. Jar Files/commons-logging-1.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Win10/OneDrive/Desktop/Spring-framework-5.2.7. Jar Files/spring-beans-5.2.7.RELEASE.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Win10/OneDrive/Desktop/Spring-framework-5.2.7. Jar Files/spring-context-5.2.7.RELEASE.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Win10/OneDrive/Desktop/Spring-framework-5.2.7. Jar Files/spring-context-support-5.2.7.RELEASE.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Win10/OneDrive/Desktop/Spring-framework-5.2.7. Jar Files/spring-core-5.2.7.RELEASE.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Win10/OneDrive/Desktop/Spring-framework-5.2.7. Jar Files/spring-expression-5.2.7.RELEASE.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Win10/OneDrive/Desktop/Spring-framework-5.2.7. Jar Files/spring-web-5.2.7.RELEASE.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Win10/OneDrive/Desktop/Spring-framework-5.2.7. Jar Files/spring-webmvc-5.2.7.RELEASE.jar"/>
 	<classpathentry kind="lib" path="src/com/nt/cfgs"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/SpringCoreLIB"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
